@@ -1,11 +1,27 @@
 # Site Info
-title:              "The Plain"
-description:        "A minimalist Jekyll theme"
-author_name:        "Heiswayi Nrird" # change this to your name
-logo_url:           https://avatars0.githubusercontent.com/u/13794983?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+title:              "The Plain Portfolio"
+description:        "Android Developer at Kidz kare"
+author_name:        "Rosário Pereira Fernandes" # change this to your name
+logo_url:           https://avatars3.githubusercontent.com/u/16766726?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+social_links:       [{
+                       "icon": "fa-github-square",
+                       "link": "https://github.com/rosariopfernandes",
+                     },
+                     {
+                       "icon": "fa-medium",
+                       "link": "https://medium.com/@rosariopfernandes"
+                     },
+                     {
+                       "icon": "fa-facebook-square",
+                       "link": "https://facebook.com/rosariopfernandes"
+                     },
+                     {
+                       "icon": "fa-twitter-square",
+                       "link": "https://twitter.com/_rpfernandes"
+                     }]
 
 # Site Settings
-url:                https://heiswayi.github.io # main url
+url:                https://rosariopfernandes.me # main url
 baseurl:            /the-plain
 permalink:          /:title # Post permalink
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -18,6 +34,8 @@ kramdown:
     input:          GFM
 sass:
     style:          :compressed
+collections:
+  - sections
 
 # Other Params
 include:            [ "robots.txt" ]

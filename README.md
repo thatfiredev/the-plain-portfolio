@@ -4,7 +4,12 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-4.0-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/the-plain.svg?branch=master)
 
-- **Demo:** https://heiswayi.github.io/the-plain/
+## The Plain Portfolio
+This fork aims to transform the "The Plain" blog theme into a simple portfolio theme.
+ Inspired by [Addy Osmani's Portfolio](https://addyosmani.com), this single-page portfolio
+ can showcase all of your work with less.
+
+- **Demo:** https://rosariopfernandes.github.io/the-plain/
 
 ![SCREENSHOT](https://i.imgur.com/FITKN1H.png)
 
@@ -49,12 +54,18 @@ This will grab the theme directly from the GitHub repo.
 
 Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
 
-## Authors
+## Original Authors
 
 - [**Heiswayi Nrird**](https://heiswayi.nrird.com)
 
 See also the list of [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) who participated in this project.
 
+## Acknowledgements
+- Based on [the-plain](https://github.com/heiswayi/the-plain) blog theme
+- Inspired by [Addy Osmani's Portfolio](https://addyosmani.com)
+- Uses illustrations from [undraw.co](https://undraw.co)
+- Uses [Font Awesome](https://https://fontawesome.com) Icons
+
 ## License
 
-[MIT](LICENSE)
+[MIT LICENSE](LICENSE)

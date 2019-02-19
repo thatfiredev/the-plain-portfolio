@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
-	spec.name          = "the-plain"
-	spec.version       = "4.0.0"
-	spec.authors       = ["Heiswayi Nrird"]
-	spec.email         = ["heiswayi@nrird.xyz"]
+	spec.name          = "the-plain-portfolio"
+	spec.version       = "1.0.0"
+	spec.authors       = ["Rosário Pereira Fernandes"]
+	spec.email         = ["rosariofernandes51@gmail.com"]
 
-	spec.summary       = "A minimalist Jekyll theme"
-	spec.homepage      = "https://github.com/heiswayi/the-plain"
+	spec.summary       = "A minimalist Jekyll theme for portfolios"
+	spec.homepage      = "https://github.com/rosariopfernandes/the-plain-portfolio"
 	spec.license       = "MIT"
 
 	spec.metadata["plugin_type"] = "theme"
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
 	spec.add_runtime_dependency "jekyll", "~> 3.5"
 
-	spec.add_development_dependency "bundler", "~> 1.15"
+	spec.add_development_dependency "bundler", "~> 2.0"
 	spec.add_development_dependency "rake", "~> 12.0"
 end
 

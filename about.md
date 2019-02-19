@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: Rosário Pereira Fernandes
+subtitle: Android Developer at Kidz Kare
 ---
 
 Hello.

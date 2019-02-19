@@ -4,14 +4,22 @@ layout: default
 
 <article>
 
-	<h1 class="title">{{ page.title }}</h1>
+	<h1 class="title">{{ site.author_name }}</h1>
+
+	{% if site.description %}
+		<h2 class="title">{{ site.description }}</h2>
+	{% endif %}
+
+	{% if site.social_links %}
+	<div class="social-media">
+		{% for item in site.social_links %}
+		<a href="{{ item.link }}" target="_blank"><i class="fab {{item.icon}} fa-2x"></i></a>
+		{% endfor %}
+	</div>
+	{% endif %}
 
 	<div class="divider"></div>
 
 	{{ content }}
 
 </article>
-
-<div class="page-navigation code">
-	<a class="home" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">&larr; Index</a>
-</div>

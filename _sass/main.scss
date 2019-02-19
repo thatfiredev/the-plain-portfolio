@@ -57,7 +57,7 @@ img {
   max-width: 100%;
 }
 a {
-  color: inherit;
+  color: #1565C0;
   text-decoration: none;
   border-bottom: 1px solid #555;
   &.image {
@@ -80,14 +80,8 @@ blockquote {
 }
 .logo {
   position: relative;
-  margin: 0 auto 35px;
+  margin: 0 auto;
   text-align: center;
-  animation-duration: 0.7s;
-  animation-fill-mode: both;
-  animation-name: bounce;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: bounce;
   a {
     background: #ddd url("logo_wrapper.png");
     color: #000;
@@ -102,25 +96,23 @@ blockquote {
     line-height: 100px;
     border: 5px solid #fff;
     box-sizing: border-box;
-    &:hover,
-    &:focus {
-      background: #f14e32;
-    }
-    &:hover + .logo-prompt,
-    &:focus + .logo-prompt {
-      display: inline-block !important;
-    }
-    .logo-avatar {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-    }
     @media (max-width : 480px) {&:hover + .logo-prompt,
       &:focus + .logo-prompt {
         display: none !important;
       }
     }
+  }
+
+  .logo-avatar {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #000;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    box-sizing: border-box;
   }
   .logo-prompt {
     position: absolute;
@@ -229,7 +221,17 @@ article {
   h1.title {
     line-height: 1.4em;
     text-align: center;
+    font-size: 2.0em;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2.title {
+    line-height: 1.4em;
+    text-align: center;
     font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .divider {
     background: #ddd;
@@ -282,8 +284,8 @@ article {
     }
   }
   a:hover {
-    color: #369;
-    border-color: #369;
+    color: #448AFF;
+    border-color: #448AFF;
   }
 }
 .back {
@@ -349,7 +351,7 @@ section {
       a {
         text-decoration: none;
         border: 0;
-        color: #000;
+        color: #448AFF;
         box-sizing: border-box;
       }
       .post-date {
@@ -358,7 +360,7 @@ section {
       }
       span {
         display: inline-block;
-        color: #757575;
+        color: #64b5f6;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
@@ -402,5 +404,119 @@ section {
   }
   100% {
     -webkit-transform: none;
+  }
+}
+
+/*List on homepage*/
+
+.list-view {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+
+@media only screen and (min-width: 793px) {
+  .list-view {
+    padding: 0px 0 24px
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-view {
+    padding: 0px 16px 64px
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-view {
+    padding: 32px 0 64px
+  }
+}
+
+
+
+.list-item {
+  display: table-row;
+}
+
+.list-header {
+  display: table-cell;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 792px) {
+  .list-header {
+    padding-top:16px
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+}
+
+.list-header ._bubble {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 14px;
+  margin-right: 16px;
+}
+
+@media only screen and (min-width: 793px) {
+  .list-header ._bubble {
+    margin-top:20px;
+    margin-right: 32px
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-header ._bubble {
+    margin-top: 0px;
+    margin-right: 16px;
+    width: 56px;
+    height: 56px
+  }
+}
+
+
+.list-detail {
+  width: 100%;
+  padding: 0px 0;
+  h3 {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 793px) {
+  .list-detail {
+    display:table-cell
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-detail {
+    display:table-cell
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-detail {
+    display:block;
+  }
+}
+
+.social-media {
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+  a {
+    color: #313131;
+    text-decoration: none;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    border-bottom: 0
   }
 }
