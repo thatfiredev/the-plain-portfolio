@@ -252,7 +252,6 @@ article {
   }
   p {
     font-size: 15px;
-    line-height: 1.9em;
     word-wrap: break-word;
   }
   .footnote {
@@ -336,11 +335,10 @@ section {
   max-width: 500px;
   margin: 0 auto 50px auto;
   ul {
-    list-style: none;
+    list-style: disc;
     margin: 0;
     padding: 0;
     li {
-      margin: 25px 0;
       .title {
         max-width: 100%;
         //overflow: hidden !important;
