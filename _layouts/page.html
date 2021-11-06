@@ -13,7 +13,7 @@ layout: default
 	{% if site.social_links %}
 	<div class="social-media">
 		{% for item in site.social_links %}
-		<a href="{{ item.link }}" target="_blank"><i class="fab {{item.icon}} fa-2x"></i></a>
+		<a href="{{ item.link }}" target="_blank" aria-label="{{item.name}}"><i class="fab {{item.icon}} fa-2x"></i></a>
 		{% endfor %}
 	</div>
 	{% endif %}
